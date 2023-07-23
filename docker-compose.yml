@@ -14,7 +14,10 @@ services:
 
 #GLPI Container
   glpi:
-    image: aguyonnet/glpi
+    #image: aguyonnet/glpi
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name : glpi
     hostname: glpi
     ports:
