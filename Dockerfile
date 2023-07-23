@@ -1,7 +1,7 @@
 #On choisit une debian
-FROM debian:10
+FROM debian:12
 
-MAINTAINER Aguyonnet "f.guyonantoine@gmail.com"
+MAINTAINER Danielw "daniel.wachnik@gmail.com"
 
 #Ne pas poser de question à l'installation
 ENV DEBIAN_FRONTEND noninteractive
@@ -12,21 +12,21 @@ RUN apt update \
 apt-utils \
 apache2 \
 apache2-utils \
-php7.3 \
-php7.3-mysql \
-php7.3-ldap \
-php7.3-xmlrpc \
-php7.3-imap \
+php8.2 \
+php8.2-mysql \
+php8.2-ldap \
+php8.2-xmlrpc \
+php8.2-imap \
 curl \
-php7.3-curl \
-php7.3-gd \
-php7.3-mbstring \
-php7.3-xml \
-php7.3-apcu-bc \
+php8.2-curl \
+php8.2-gd \
+php8.2-mbstring \
+php8.2-xml \
+php8.2-apcu-bc \
 php-cas \
-php7.3-intl \
-php7.3-zip \
-php7.3-bz2 \
+php8.2-intl \
+php8.2-zip \
+php8.2-bz2 \
 cron \
 wget \
 ca-certificates \
